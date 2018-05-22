@@ -27,10 +27,11 @@ week.dist=aggregate(list(dist = runevents$Dist..mi.),
 #    geom_point(shape=1) +     # Use hollow circles
 week.dist$date=as.Date(week.dist$date)
 
-ggplot(data=week.dist,aes(x=date, y=dist,group = 1))+
-  geom_line(color="blue")+
-  geom_point(data=runevents, aes(x=Date, y=Dist..mi.))+
-  geom_smooth(data=runevents,  aes(x=Date, y=Dist..mi.),color = "red")
+plot(week.dist$date, week.dist$dist)
+#  data=week.dist,aes(x=date, y=dist,group = 1))+
+#  geom_line(color="blue")+
+#  geom_point(data=runevents, aes(x=Date, y=Dist..mi.))+
+#  geom_smooth(data=runevents,  aes(x=Date, y=Dist..mi.),color = "red")
 
 ```
 ```{r}
