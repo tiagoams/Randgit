@@ -9,7 +9,8 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 
 ```{r}
 library(xlsx)
-sportlog=read.xlsx("c:/Users/tams00/Documents/casa/Sport_2018.xlsx",sheetName="2018")
+sportlog=read.xlsx("c:/Users/tams00/Documents/git/Randgit/data/Sport_2018.xlsx",sheetName="2018")
+
 ```
 
 ```{r}
